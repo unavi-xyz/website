@@ -25,11 +25,8 @@ in {
     pname = "website";
     buildPhase = "trunk build --release";
     installPhase = ''
-      mkdir -p $out/web
-      cp -r ./dist/* $out/web
-    '';
-    postInstall = ''
-      cp -r ./assets $out/web
+      mkdir -p $out
+      cp -r ./dist/* $out
     '';
   });
 }
