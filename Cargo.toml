@@ -1,0 +1,19 @@
+[package]
+name = "website"
+publish = false
+version = "0.0.0"
+edition = "2021"
+repository = "https://github.com/unavi-xyz/website"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+
+[dependencies]
+leptos = { version = "0.5.4", features = ["csr", "tracing"] }
+tracing = "0.1.40"
+wasm-bindgen = "0.2.89"
