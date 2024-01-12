@@ -3,3 +3,7 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
+
+nav > a {
+  @apply text-blue-300 hover:text-blue-400 transition-colors;
+}
