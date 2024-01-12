@@ -4,6 +4,7 @@ publish = false
 version = "0.0.0"
 edition = "2021"
 repository = "https://github.com/unavi-xyz/website"
+license = "GPL-3.0-or-later"
 
 [lib]
 crate-type = ["cdylib"]
