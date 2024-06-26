@@ -33,6 +33,8 @@
             cp -r src/* $out
           '';
         };
+
+        devShell = pkgs.mkShell { buildInputs = with pkgs; [ nodePackages.prettier ]; };
       }
     );
 }
