@@ -1,0 +1,22 @@
+:root {
+  --bg-color: #18181b;
+  --text-color: #ffffff;
+  --primary-color: #93c5fd;
+  --primary-hover-color: #60a5fa;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+nav > a {
+  color: var(--primary-color);
+  transition: color 0.2s;
+}
+
+nav > a:hover {
+  color: var(--primary-hover-color);
+}

@@ -1,13 +1,3 @@
 # website
 
-## Build
-
-```bash
-nix build
-```
-
-## Develop
-
-```bash
-trunk serve
-```
+The UNAVI website, located at [unavi.xyz](https://unavi.xyz).
