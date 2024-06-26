@@ -35,6 +35,8 @@
         };
 
         devShell = pkgs.mkShell { buildInputs = with pkgs; [ nodePackages.prettier ]; };
+
+        formatter = pkgs.nixfmt-rfc-style;
       }
     );
 }
