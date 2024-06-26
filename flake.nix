@@ -12,6 +12,16 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
+        apps.default = flake-utils.lib.mkApp {
+          drv = pkgs.writeShellApplication {
+            name = "generate-readme";
+            text = ''
+              ${pkgs.nodePackages.live-server}/bin/live-server src --mount=/public:public
+            '';
+          };
+
+        };
+
         packages.default = pkgs.stdenv.mkDerivation {
           pname = "website";
           version = "0.0.0";

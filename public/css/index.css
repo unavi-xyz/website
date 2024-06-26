@@ -12,8 +12,13 @@ body {
     "Liberation Mono", "Courier New", monospace;
 }
 
+.content {
+  text-align: center;
+}
+
 nav > a {
   color: var(--primary-color);
+  text-decoration: none;
   transition: color 0.2s;
 }
 
