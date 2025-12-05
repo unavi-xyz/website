@@ -14,12 +14,11 @@
       {
         apps.default = flake-utils.lib.mkApp {
           drv = pkgs.writeShellApplication {
-            name = "generate-readme";
+            name = "run live server";
             text = ''
               ${pkgs.nodePackages.live-server}/bin/live-server src --mount=/public:public
             '';
           };
-
         };
 
         packages.default = pkgs.stdenv.mkDerivation {
