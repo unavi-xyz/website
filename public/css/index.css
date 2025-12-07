@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #18181b;
-  --text-color: #ffffff;
+  --bg-color: #111;
+  --text-color: #fff;
   --primary-color: #93c5fd;
   --primary-hover-color: #60a5fa;
 }
@@ -16,12 +16,20 @@ body {
   text-align: center;
 }
 
-nav > a {
+nav {
+  margin-bottom: 2rem;
+}
+
+nav>a {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.2s;
 }
 
-nav > a:hover {
+nav>a:hover {
   color: var(--primary-hover-color);
+}
+
+img {
+  border-radius: 1rem;
 }
