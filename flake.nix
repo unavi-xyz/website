@@ -14,7 +14,7 @@
       {
         apps.default = flake-utils.lib.mkApp {
           drv = pkgs.writeShellApplication {
-            name = "run live server";
+            name = "run-live-server";
             text = ''
               ${pkgs.nodePackages.live-server}/bin/live-server src --mount=/public:public
             '';
